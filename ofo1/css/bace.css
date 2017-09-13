@@ -1,0 +1,12 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p{margin: 0; padding: 0;}
+a{color: #000; text-decoration: none;}
+ul,ol{list-style: none;}
+b,strong,h1,h2,h3,h4,h5,h6{font-size: 16px; font-weight: normal;}
+i,em{font-style: normal;}
+img{vertical-align: top;}
+.clear-fix:after{
+	        content: "";
+	        display:block;
+	        clear:both;
+}
+.clear-fix{zoom:1;}

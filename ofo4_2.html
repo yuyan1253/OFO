@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhongyuyan"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />-->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!--<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/ofo4_1.css"/>
+		<title>详情－ofo 共享单车－随时随地有车骑</title>
+	</head>
+	<body>
+          <!--
+          	作者：477691330@qq.com
+          	时间：2017-07-08
+          	描述：ofo热门活动
+          -->
+		<div id="wrap">
+			<header>
+				<div class="clear nav">
+					<div class="logo fl"><a href="javascript:;"><img src="img/logo.png"/></a></div>
+					<ul class="fr list">
+						<li class="fl">
+							<a href="index.html">首页</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="guanyu.html">关于我们</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="javascript:;">大共享</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="down.html">下载APP</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="ofo-jiaru.html">加入我们</a>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content">
+				<div class="cont">
+					<span>2016/ 12/ 4</span>
+					<h2>ofo免费星骑一 | 全国22座城市同时免费，可以，这很ofo！</h2>
+					<p>最近，我们做了一系列「很ofo」的事情。 比如：小黄车升级，进入3.0时代； 召开发布会，宣布正式进入城市； 向全社会发出“城市大共享”计划的邀请； 双11刷屏的骑车配对活动； 以及接下来要宣布的——12月“ofo免费星骑一”活动！</p>
+					<img src="img/2-1.png" alt="" />
+					<p>堵车是每个年轻人的天敌，汽车尾气、雾霾和过劳死一样具有摧毁性！现在，和它们统统说“No”！</p>
+					<p>今天开始，全国22座城市同时开启“ofo免费星骑一”活动，12月的每个周一，所有认证用户的每次骑行，都由ofo为你买单！</p>
+					<img src="img/2-2.png" alt="" />
+					<p>作为首个提倡低碳出行的共享单车公司，全国22座城市同时免费，这么大噱头，小黄本想「重要的事情说三遍」，但因为ofo一向低调的个性，免费这件事，要做得漂亮才是首要的！</p>
+					<img src="img/2-3.png" alt="" />
+					<p>“这是第106天见到她，要不要表白？” 免费骑车，告别拥堵 准时邂逅心仪的Ta</p>
+					<img src="img/2-4.png" alt="" />
+					<p>“周一限行，做一天的骑士！” 免费骑车，低碳出行 下次刷爆朋友圈的就是“免费星骑一”</p>
+					<img src="img/2-5.png" alt="" />
+					<p>“小黄车＋地铁出行组合，一会儿就去清空购物车” 免费骑车，拒绝高价出行 一支YSL口红算什么吃土</p>
+					<p>“随时随地有车骑”，不是一句口号，我们希望借助小黄车的便捷、低碳、高效，为所有用户的生活带去更多美好的出行方式，打造全新出行习惯！</p>
+					<p>星期一，让我们相约一起免费骑车吧！</p>
+				</div>	
+			</div>
+			
+			<footer>
+				<h2><img src="img/footer_logo.png"/></h2>
+				<p>4001 507 507 (周一至周五:7:00-23:00)</p>
+				<p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+				<div class="link">
+					<img src="img/wx-qrcode.jpg"/>
+					<a  href="javascript:;" class="weibo">微博</a>
+					<a  href="javascript:;" class="weixiun">微信</a>
+				</div>
+				<span>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</span>
+			</footer>
+		</div>
+	</body>
+
+</html>
+<script>
+	$(function (){
+		
+		
+		//导航
+		$('.list li').hover(function() {
+			$(this).find('span').removeClass('out').addClass('over');
+		}, function() {
+			$(this).find('span').addClass('out').removeClass('over');
+		});
+		//二维码
+		$('.weixiun').mouseenter(function(){
+			$('.link img').fadeIn();
+		})
+		$('.weixiun').mouseleave(function(){
+			$('.link img').stop().fadeOut();
+		})
+	});
+	
+</script>

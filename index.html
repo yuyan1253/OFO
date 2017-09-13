@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhongyuyan"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<title>ofo共享单车－随时随地有车骑</title>
+	</head>
+	<body>
+          <!--
+          	作者：477691330@qq.com
+          	时间：2017-07-08
+          	描述：ofo首页
+          -->
+		<div id="wrap">
+			<header class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 clear nav">
+					<div class="logo fl"><a href="javascript:;"><img src="img/logo.png"/></a></div>
+					<ul class="fr list">
+						<li class="fl">
+							<a href="javascript:;">首页</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="guanyu.html">关于我们</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="down.html">下载APP</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="ofo-jiaru.html">加入我们</a>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="main">
+				
+				<div class="main_s clear">
+					<div class="con">
+						<div>
+							<img src="img/home_bg0.jpg"/>
+							<img class="icon" src="img/logo33.png"/>
+						</div>
+						
+						<div>
+							<img src="img/home_bg.jpg"/>
+							<img class="icon1" src="img/logo33.png"/>
+						</div>
+						
+						<div>
+							<img src="img/home_bg2.jpg"/>
+							<img class="icon" src="img/logo33.png"/>
+						</div>
+						<div>
+							<img src="img/home_bg0.jpg"/>
+							<img class="icon2" src="img/logo33.png"/>
+						</div>
+						<div>
+							<img src="img/home_bg.jpg"/>
+							<img class="icon1" src="img/logo33.png"/>
+						</div>
+						
+					</div>
+					<ul class="clear tab">
+						<li class="fl active"></li>
+						<li class="fl"></li>
+						<li class="fl"></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="clear column">
+				<li class="fl share_img">
+					<h3>ofo大共享</h3>
+					<a href="ofo/ofo1.html">查看详情<em></em></a>
+				</li>
+				<li class="fl event_img">
+					<h3>ofo大事件</h3>
+					<a href="ofo1/dashijian.html">查看详情<em></em></a>
+				</li>
+				<li class="fl family_img">
+					<h3>ofo大家庭</h3>
+					<a href="ofo3.html">查看详情<em></em></a>
+				</li>
+				<li class="fl active_img">
+					<h3>ofo热门活动</h3>
+					<a href="ofo4.html">查看详情<em></em></a>
+				</li>
+			</ul>
+			<footer>
+				<h2><img src="img/footer_logo.png"/></h2>
+				<p>4001 507 507 (周一至周五:7:00-23:00)</p>
+				<p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+				<div class="link">
+					<img src="img/wx-qrcode.jpg"/>
+					<a  href="javascript:;" class="weibo">微博</a>
+					<a  href="javascript:;" class="weixiun">微信</a>
+				</div>
+				<span>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</span>
+			</footer>
+		</div>
+	</body>
+
+</html>
+<script>
+	$(function (){
+		var aLen=$('.con div').length;
+		//给父级设置宽
+		$('.con').css('width',1349*aLen);//父级=div的宽度*div的长度
+		//代表当前图片的显示，//显示第一页
+		var now=0;
+		//next 点击事件
+		$('.tab li').click(function(){
+			$('.tab li').removeClass('active');//删除类名
+			$(this).addClass('active');//添加类名
+			now=$(this).index();
+			$('.con').stop().animate({left:-1349*(now+1)});
+		})
+		function nextPage(){//下一页
+			now++;
+			if(now>=aLen-2){//因为now从0数起，
+					$('.con').stop().animate({left:-1349*(now+1)},function(){
+					$('.con').css('left',-1349);
+				});
+				now=0;
+			}else{
+			$('.con').stop().animate({left:-1349*(now+1)});
+			}
+			//清空
+			$('.tab li').removeClass('active');
+			//li的第now个添加类名active
+			$('.tab li').eq(now).addClass('active');
+		}
+		clearInterval(time);
+	var time=setInterval(function(){
+		  	nextPage();
+		},3000);
+		//二维码
+		$('.weixiun').mouseenter(function(){
+			$('.link img').fadeIn();
+		})
+		$('.weixiun').mouseleave(function(){
+			$('.link img').stop().fadeOut();
+		})
+		//导航
+		$('.list li').hover(function() {
+			$(this).find('span').removeClass('out').addClass('over');
+		}, function() {
+			$(this).find('span').addClass('out').removeClass('over');
+		}); 
+	});
+	
+</script>

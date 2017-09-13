@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhongyuyan"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />-->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!--<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/ofo4_1.css"/>
+		<title>详情－ofo 共享单车－随时随地有车骑</title>
+	</head>
+	<body>
+          <!--
+          	作者：477691330@qq.com
+          	时间：2017-07-08
+          	描述：ofo热门活动
+          -->
+		<div id="wrap">
+			<header>
+				<div class=" clear nav">
+					<div class="logo fl"><a href="javascript:;"><img src="img/logo.png"/></a></div>
+					<ul class="fr list">
+						<li class="fl">
+							<a href="index.html">首页</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="guanyu.html">关于我们</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="javascript:;">大共享</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="down.html">下载APP</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="ofo-jiaru.html">加入我们</a>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content">
+				<div class="cont">
+					<span>2016/ 10/ 10</span>
+					<h2>ofo共享单车完成1.3亿美元C轮融资</h2>
+					<img src="img/5-6.png" alt="" />
+					<p>2016年10月10日，ofo共享单车宣布完成1.3亿美元C轮融资，包括两周前滴滴出行数千万美元的C1轮战略投资。C2轮投资方均来自国内外顶级投资机构：参与了滴滴出行最新一轮融资的美国对冲基金Coatue，两年投资55 家公司并缔造4家独角兽的小米，以及曾投资滴滴出行、饿了么的中信产业基金为本轮投资领投方，元璟资本、著名风险投资家Yuri Milner以及ofo的早期投资方经纬中国、金沙江创投等早期投资机构继续跟投。</p>
+					<p>在未来，ofo将与小米展开战略合作。早前滴滴出行方面表示，滴滴出行与ofo将进一步为人们“城市出行共享”展开战略合作，用户在滴滴平台上有望直接体验到ofo的服务。“流量+硬件”的战略布局，将会极大提升ofo共享单车在城市出行服务的竞争力。</p>
+					<p>ofo共享单车是全球第一个无桩共享单车出行解决方案，首创“共享单车”模式。用户通过微信服务号或移动App输入车牌号即可获得密码解锁单车，随取随用，随时随地。用户也可以共享自己的单车给 ofo 经营，从而获得所有 ofo 共享单车的免费使用权，以1换N。</p>
+					<p>ofo共享单车上线13个月，覆盖200个校园，拥有180万用户，每日提供超过50万次出行服务。上线的一年时间里，ofo共完成了5轮融资。从高频的融资节奏以及商业布局来看，ofo长远战略的部署意识以及踏实干劲，让北大学生创业背景的ofo成为当下最有潜力的创业公司。</p>
+					
+				</div>	
+			</div>
+			
+			<footer>
+				<h2><img src="img/footer_logo.png"/></h2>
+				<p>4001 507 507 (周一至周五:7:00-23:00)</p>
+				<p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+				<div class="link">
+					<img src="img/wx-qrcode.jpg"/>
+					<a  href="javascript:;" class="weibo">微博</a>
+					<a  href="javascript:;" class="weixiun">微信</a>
+				</div>
+				<span>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</span>
+			</footer>
+		</div>
+	</body>
+
+</html>
+<script>
+	$(function (){
+		
+		
+		//导航
+		$('.list li').hover(function() {
+			$(this).find('span').removeClass('out').addClass('over');
+		}, function() {
+			$(this).find('span').addClass('out').removeClass('over');
+		});
+		//二维码
+		$('.weixiun').mouseenter(function(){
+			$('.link img').fadeIn();
+		})
+		$('.weixiun').mouseleave(function(){
+			$('.link img').stop().fadeOut();
+		})
+	});
+	
+</script>

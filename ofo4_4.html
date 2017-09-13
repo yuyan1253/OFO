@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhongyuyan"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />-->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!--<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/ofo4_1.css"/>
+		<title>详情－ofo 共享单车－随时随地有车骑</title>
+	</head>
+	<body>
+          <!--
+          	作者：477691330@qq.com
+          	时间：2017-07-08
+          	描述：ofo热门活动
+          -->
+		<div id="wrap">
+			<header>
+				<div class=" clear nav">
+					<div class="logo fl"><a href="javascript:;"><img src="img/logo.png"/></a></div>
+					<ul class="fr list">
+						<li class="fl">
+							<a href="index.html">首页</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="guanyu.html">关于我们</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="javascript:;">大共享</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="down.html">下载APP</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="ofo-jiaru.html">加入我们</a>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content">
+				<div class="cont">
+					<span>2016/ 11/ 28</span>
+					<h2>ofo X ENJOY | 扩大你的美食半径，温暖治愈你的生活（内含福利）</h2>
+					<p>在治愈系里，美食向来占有很高的地位。 但往往在繁琐且不自由的都市生活里，距离成为了吃货探索美食的最大限制，明明10分钟的骑行路程，因为缺少了适宜的代步工具，往往要走上十几二十分钟，或者堵在水泄不通的路上，任时间流逝，心和胃渐渐没了探索美食的欲望。</p>
+					<p>11月28日，ofo共享单车携手ENJOY精选美食电商，联合多家美食餐厅，为美食家们带去全新美食探索体验！骑上小黄车，扩大你的美食半径，去治愈你的心和胃！</p>
+					<img src="img/4-1.png" alt="" />
+					<p>羽绒服加厚棉袜，羊绒帽子和手套，骑上小黄车为这单调的城市添加一抹清新的亮色，还要扩大你的美食半径，成为吃货圈里第一个吃遍美食的人！</p>
+					<p>－ ofo共享单车 X ENJOY精选美食电商 －</p>
+					<p>温馨提示：北京和上海以外城市的朋友，请往第三点查看福利大礼包（PS：北京、上海的伙伴一样可以参与哦）～</p>
+					<p>专场福利</p>
+					<p>骑乘小黄车，点击以下城市链接，进入ofo共享单车 X ENJOY专场福利！</p>
+					<p>北京吃货戳 <a href="https://topic.ricebook.com/topicpage/topic_web.html?topic_id=6185&from=singlemessage&isappinstalled=0&winzoom=1">☞ 北京吃货专场</a></p>
+					<p>上海吃货戳<a href="https://topic.ricebook.com/topicpage/topic_web.html?topic_id=6191&from=singlemessage&isappinstalled=1"> ☞ 上海吃货专场</a></p>
+					<p>晒图有奖</p>
+					<p>微博上传小黄车照片，发布＃扩大你的美食半径＃微博话题，并@ofo共享单车 和@ENJOY精选美食电商 ，将有100名幸运者得到ofo X ENJOY限量定制精美礼品！ 活动时间：11月28日－12月2日 公布时间：12月5日公布获奖名单，所有礼品将在活动结束后15个工作日内寄出</p>
+					<p>全国用户福利</p>
+					<p>ofo共享单车携手ENJOY精选美食电商，为全国的朋友送吃！货！福！利！ 精选白俄罗斯“迈咔”混合口味薯片，ENJOY售价27元，ofo用戶专享价两盒只要0元！</p>
+					<img src="img/4-2.png" alt="" />
+					<img src="img/4-3.png" alt="" />
+				</div>	
+			</div>
+			
+			<footer>
+				<h2><img src="img/footer_logo.png"/></h2>
+				<p>4001 507 507 (周一至周五:7:00-23:00)</p>
+				<p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+				<div class="link">
+					<img src="img/wx-qrcode.jpg"/>
+					<a  href="javascript:;" class="weibo">微博</a>
+					<a  href="javascript:;" class="weixiun">微信</a>
+				</div>
+				<span>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</span>
+			</footer>
+		</div>
+	</body>
+
+</html>
+<script>
+	$(function (){
+		
+		
+		//导航
+		$('.list li').hover(function() {
+			$(this).find('span').removeClass('out').addClass('over');
+		}, function() {
+			$(this).find('span').addClass('out').removeClass('over');
+		});
+		//二维码
+		$('.weixiun').mouseenter(function(){
+			$('.link img').fadeIn();
+		})
+		$('.weixiun').mouseleave(function(){
+			$('.link img').stop().fadeOut();
+		})
+	});
+	
+</script>

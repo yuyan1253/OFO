@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="zhongyuyan"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />-->
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<!--<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="css/ofo4_1.css"/>
+		<title>详情－ofo 共享单车－随时随地有车骑</title>
+	</head>
+	<body>
+          <!--
+          	作者：477691330@qq.com
+          	时间：2017-07-08
+          	描述：ofo热门活动
+          -->
+		<div id="wrap">
+			<header>
+				<div class=" clear nav">
+					<div class="logo fl"><a href="javascript:;"><img src="img/logo.png"/></a></div>
+					<ul class="fr list">
+						<li class="fl">
+							<a href="index.html">首页</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="guanyu.html">关于我们</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="javascript:;">大共享</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="down.html">下载APP</a>
+							<span></span>
+						</li>
+						<li class="fl">
+							<a href="ofo-jiaru.html">加入我们</a>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="content">
+				<div class="cont">
+					<span>2016/ 11/ 11</span>
+					<h2>ofo×杜蕾斯｜双11版《速度与激情》，今日全球首发！</h2>
+					<p>听说，在这个虐狗＋剁手的日子里，在外面骑小黄车的童鞋，80%都还是单身！ 解救单身狗，人人有责！今天，ofo X 杜蕾斯要给大家不一样的双11骑行体验！ 想要一探究竟，请继续往下看——</p>
+					<img src="img/5-1.png" alt="" />
+					<p>“ 重要 通知 ”</p>
+					<p>光棍节没人约？骑ofo小黄车上路，找到全国唯一一个和你拥有相同幸运号的人，就能助你离脱单更近一步！</p>
+					<p>双11没钱囤货？双11全天骑ofo小黄车，即可领取20元杜蕾斯天猫优惠券！ 还觉得福利不够？杜蕾斯市场总监约你，亲自线下送TT，零距离和男神接触，心不心动？ （那还用说！）</p>
+					<img src="img/5-2.png" alt="" />
+					<p>▲帅成酱紫，你忍心不约嘛？</p>
+					<p>当全世界几乎都在不断“加入购物车”、“一键购买”的时候，希望此时还在路上的你，看到这篇推文，能够感受到来自ofo X 杜蕾斯的祝福——然后，打开ofo APP，骑上你心爱的小黄车，和我们一起摇摆！</p>
+					<img src="img/5-3.png" alt="" />
+					<p>缘份是一种很奇妙的东西，ofo希望小伙伴们能抓住今天的机会，遇见新的朋友，接触新的生活；</p>
+					<p>在不期而遇中，如果遇到心仪的TA，希望你能勇敢表白自己，得到幸福！</p>
+					<p>另外，记得关注11月12日的手机短信，领取优惠券哦！ 好了，不多说了，快来一场“脱单骑行”吧！</p>
+					
+				</div>	
+			</div>
+			
+			<footer>
+				<h2><img src="img/footer_logo.png"/></h2>
+				<p>4001 507 507 (周一至周五:7:00-23:00)</p>
+				<p>北京市海淀区北四环西路58号理想国际大厦11层</p>
+				<div class="link">
+					<img src="img/wx-qrcode.jpg"/>
+					<a  href="javascript:;" class="weibo">微博</a>
+					<a  href="javascript:;" class="weixiun">微信</a>
+				</div>
+				<span>Copyright © 2017 ofo Inc. 保留所有权利。京公网安备 11010802022978号   |   公共事务邮箱 gr@ofo.so 商务合作邮箱 bdinchina@ofo.so</span>
+			</footer>
+		</div>
+	</body>
+
+</html>
+<script>
+	$(function (){
+		
+		
+		//导航
+		$('.list li').hover(function() {
+			$(this).find('span').removeClass('out').addClass('over');
+		}, function() {
+			$(this).find('span').addClass('out').removeClass('over');
+		});
+		//二维码
+		$('.weixiun').mouseenter(function(){
+			$('.link img').fadeIn();
+		})
+		$('.weixiun').mouseleave(function(){
+			$('.link img').stop().fadeOut();
+		})
+	});
+	
+</script>
